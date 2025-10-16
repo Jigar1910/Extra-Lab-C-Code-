@@ -1,0 +1,22 @@
+
+//Write a program that finds the sum of digit of a number using while loop.
+
+
+#include <stdio.h>
+
+int main() {
+    int n,temp,sum=0;
+    printf("Enter num:");
+    scanf("%d",&n);
+    temp=n;
+    while (temp!=0)
+    {
+        int digit=temp%10;
+        sum=sum+digit;
+        temp = temp / 10;
+    }
+    printf("Sum is:%d",sum);
+    
+
+    return 0;
+}
