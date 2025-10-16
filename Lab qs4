@@ -1,0 +1,15 @@
+//Write a small C snippet with int, if,while,return. Ask students: Which words are keywords and which are identifiers.
+#include <stdio.h>
+
+int main() {
+    int n = 0;
+
+    if (n < 3) {
+        while (n < 3) {
+            printf("%d\n", n);
+            n++;
+        }
+    }
+
+    return 0;
+}
