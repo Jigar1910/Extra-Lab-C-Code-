@@ -1,0 +1,16 @@
+//Create a program where a global variable and a local variable have the same name. Print their values inside and outside the function to show the difference.
+#include <stdio.h>
+
+int num = 10;  
+
+void show() {
+    int num = 20; 
+    printf("Inside function: %d\n", num);
+}
+
+int main() {
+    printf("Outside function: %d\n", num);
+    show();
+    printf("Outside function again: %d\n", num);
+    return 0;
+}
